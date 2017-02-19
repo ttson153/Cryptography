@@ -1,0 +1,8 @@
+./SDES -e -CBC -i plain.txt -o cipherCBC.txt -c SDES.ini -k 0111111101
+
+./SDES -d -CBC -i cipherCBC.txt -o cipherCBC_decrypted.txt -c SDES.ini -k 0111111101 -iv 10111010
+
+./SDES -e -ECB -i plain.txt -o cipherECB.txt -c SDES.ini -k 0111111101
+
+./SDES -d -ECB -i cipherECB.txt -o cipherECB_decrypted.txt -c SDES.ini -k 0111111101
+
